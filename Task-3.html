@@ -1,0 +1,63 @@
+
+<!-- Create a web page to perform Sum operation using  JavaScript -->
+<html>
+<head></head>
+<body>
+<h3 >JavaScript Programming</h3>
+<hr/>
+First Number :  
+<input type="text" id="t1"  />
+<br></br>
+Second Number :  
+<input type="text" id="t2"  />
+<br></br>
+<input type="button" onclick="f1(event)"
+			value="Sum"  />	 	
+ <input type="button" onclick="f1(event)"
+ value="Sub"  />
+ <input type="button" onclick="f1(event)"
+ value="Mul"  />
+ <input type="button" onclick="f1(event)"
+			value="Div"  />
+<p id="p1"></p>
+
+<script>
+	function  f1(event)
+	{
+
+		let num1 = document.getElementById("t1");
+        let num2 = document.getElementById("t2");
+		let n1=num1.value;
+		let n2=num2.value;
+		let sum=parseInt(n1)+parseInt(n2);
+		let sub=parseInt(n1)-parseInt(n2);
+		let mul=parseInt(n1)*parseInt(n2);
+		let div=parseInt(n1)/parseInt(n2);
+		let paraObj=document.getElementById("p1");
+		let operation=event.target.value;
+
+		if(operation=="Sum"){
+		paraObj.innerHTML=sum;
+
+		}
+
+		if(operation=="Sub"){
+		paraObj.innerHTML=sub;
+		}
+		if(operation=="Mul"){
+			paraObj.innerHTML=mul;
+		}
+		if(operation=="Div"){
+			paraObj.innerHTML=div;
+		}
+
+
+
+
+	 }
+</script>
+</body>
+</html>
+
+
+

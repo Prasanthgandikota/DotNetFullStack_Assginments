@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 >JavaScript Programming</h3>
+<hr/>
+Empno :  
+<input type="text" id="e1"  />
+<br></br>
+Ename :  
+<input type="text" id="e2"  />
+<br></br>
+Job:
+<input type="text" id="e3" />
+<br></br>
+Salary:
+<input type ="text" id="e4" />
+<br></br>
+<input type="button" onclick="f1()"
+			value="submit"  />	 	
+ </br>
+<p id="p1"></p>
+<script>
+function f1(){
+
+    let Eno = document.getElementById("e1");
+    let Ename  = document.getElementById("e2");
+    let Ejob = document.getElementById("e3");
+    let Esalary=document.getElementById("e4");
+
+		let n1=Eno.value;
+		let n2=Ename.value;
+        let n3=Ejob.value;
+        let n4=Esalary.value;
+        console.log("Eno:"+ n1+", Ename:"+n2+", Ejob:"+n3+ ", Esalary:"+n4);
+
+		let paraObj=document.getElementById("p1");
+		paraObj.innerHTML="Eno:"+ n1+", Ename:"+n2+", Ejob:"+n3+ ", Esalary:"+n4;
+
+
+}
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+<!-- Create a web page to perform Sum operation using  JavaScript -->
+<html>
+<head></head>
+<body>
+<h3 >JavaScript Programming</h3>
+<hr/>
+Product Name :  
+<input type="text" id="t1"  />
+<br></br>
+Unit Prize  :  
+<input type="text" id="t2"  />
+<br></br>
+Quality:
+<input type="text" id="t3" />
+<br></br>
+<input type="button" onclick="f1()"
+			value="Get Total"  />	 	
+ </br>
+<p id="p1"></p>
+
+<script>
+	function  f1()
+	{
+
+		let Pname = document.getElementById("t1");
+        let Uprize = document.getElementById("t2");
+        let qua=document.getElementById("t3");
+
+		let n1=Pname.value;
+		let n2=Uprize.value;
+        let n3=qua.value;
+        let prod=parseInt(n2)*parseInt(n3);
+
+		let paraObj=document.getElementById("p1");
+		paraObj.innerHTML=prod;
+
+        if(n3>10){
+            paraObj.innerHTML=prod-((prod*10)/100);
+        }
+        if(n3>20){
+            paraObj.innerHTML=prod-((prod*20)/100);
+        }
+        if(n3>30){
+            paraObj.innerHTML=prod-((prod*30)/100);
+        }
+
+
+
+	 }
+</script>
+</body>
+</html>
+
+
+
